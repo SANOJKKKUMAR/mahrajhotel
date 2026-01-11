@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Maharaja | Best 2-Star Hotel in Nathnagar, Bhagalpur</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { scrollbar-width: none; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade { animation: fadeIn 0.9s ease-out; }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 w-full bg-white shadow-lg z-50 px-4 md:px-10 py-3 flex justify-between items-center">
+    <div>
+        <h1 class="text-xl font-bold text-blue-900">
+            Hotel <span class="text-yellow-600">Maharaja</span>
+        </h1>
+        <p class="text-[10px] text-yellow-600 font-bold uppercase">Nathnagar • 2-Star Hotel</p>
+    </div>
+
+    <div class="hidden md:flex gap-6 text-sm font-semibold">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#rooms" class="hover:text-blue-600">Rooms</a>
+        <a href="#facilities" class="hover:text-blue-600">Facilities</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </div>
+
+    <a href="tel:09431214881" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold text-sm">
+        <i class="fas fa-phone-alt mr-2"></i> Book Now
+    </a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header id="home" class="relative h-[85vh] pt-16 flex items-center justify-center">
+    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1400"
+         class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative z-10 text-center text-white px-4 animate-fade">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-4">
+            Comfortable Stay in Nathnagar
+        </h2>
+        <p class="text-lg md:text-xl mb-6">
+            Affordable • Family Friendly • 2-Star Comfort
+        </p>
+
+        <div class="flex justify-center gap-4 flex-wrap">
+            <span class="bg-white/20 px-4 py-2 rounded-full text-sm">
+                <i class="fas fa-wifi text-yellow-400"></i> Free Wi-Fi
+            </span>
+            <span class="bg-white/20 px-4 py-2 rounded-full text-sm">
+                <i class="fas fa-parking text-yellow-400"></i> Free Parking
+            </span>
+            <span class="bg-white/20 px-4 py-2 rounded-full text-sm">
+                ⭐⭐ 2-Star Hotel
+            </span>
+        </div>
+    </div>
+</header>
+
+<!-- ================= AVAILABILITY ================= -->
+<section class="max-w-5xl mx-auto -mt-16 relative z-20 px-4">
+    <div class="bg-white p-6 rounded-xl shadow-2xl grid grid-cols-1 md:grid-cols-4 gap-4">
+        <input type="date" class="border p-3 rounded" placeholder="Check-In">
+        <input type="date" class="border p-3 rounded" placeholder="Check-Out">
+        <select class="border p-3 rounded">
+            <option>1 Guest</option>
+            <option selected>2 Guests</option>
+            <option>3 Guests</option>
+        </select>
+        <button class="bg-yellow-500 hover:bg-yellow-600 font-bold rounded text-blue-900">
+            Check Availability
+        </button>
+    </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-4 mb-6 flex justify-between">
+        <h3 class="text-2xl font-bold">Hotel Gallery</h3>
+    </div>
+
+    <div class="flex gap-4 overflow-x-auto px-4 no-scrollbar snap-x">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400" class="h-64 w-80 object-cover rounded-xl snap-center">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400" class="h-64 w-80 object-cover rounded-xl snap-center">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400" class="h-64 w-80 object-cover rounded-xl snap-center">
+        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400" class="h-64 w-80 object-cover rounded-xl snap-center">
+    </div>
+</section>
+
+<!-- ================= ROOMS ================= -->
+<section id="rooms" class="py-16 px-4 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10">Available Rooms</h3>
+
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600" class="h-56 w-full object-cover">
+            <div class="p-6">
+                <h4 class="text-2xl font-bold mb-2">Standard Room (AC / Non-AC)</h4>
+
+                <ul class="text-sm text-gray-600 space-y-2">
+                    <li><i class="fas fa-check text-green-500"></i> Free Wi-Fi</li>
+                    <li><i class="fas fa-check text-green-500"></i> Private Bathroom</li>
+                    <li><i class="fas fa-check text-green-500"></i> Daily Housekeeping</li>
+                </ul>
+
+                <div class="flex justify-between items-center mt-6">
+                    <div>
+                        <span class="text-2xl font-bold text-blue-900">₹1,260</span>
+                        <span class="text-sm text-gray-500">/night</span>
+                    </div>
+                    <a href="https://wa.me/919431214881"
+                       class="bg-blue-900 text-white px-6 py-2 rounded font-bold">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FACILITIES ================= -->
+<section id="facilities" class="bg-white py-14">
+    <h3 class="text-center text-2xl font-bold mb-10">Hotel Facilities</h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">
+        <div><i class="fas fa-parking text-3xl text-blue-600"></i><p>Free Parking</p></div>
+        <div><i class="fas fa-utensils text-3xl text-blue-600"></i><p>Restaurant</p></div>
+        <div><i class="fas fa-wheelchair text-3xl text-blue-600"></i><p>Accessible</p></div>
+        <div><i class="fas fa-concierge-bell text-3xl text-blue-600"></i><p>24×7 Service</p></div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact" class="bg-blue-950 text-white pt-16 pb-8">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+        <div>
+            <h4 class="text-2xl font-bold mb-4">Hotel Maharaja</h4>
+            <p class="text-blue-200 text-sm">
+                Comfortable & affordable stay in Nathnagar, Bhagalpur.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-bold mb-4">Contact</h4>
+            <p class="text-sm text-blue-200">
+                📍 Nathnagar, Bhagalpur – 812006<br>
+                📞 094312 14881<br>
+                ⏰ Check-in 12 PM | Check-out 11 AM
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-bold mb-4">Follow Us</h4>
+            <div class="flex gap-4">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center text-xs text-blue-400 mt-12">
+        © 2024 Hotel Maharaja Bhagalpur. All Rights Reserved.
+    </p>
+</footer>
+
+<!-- ================= FLOATING BUTTON ================= -->
+<a href="https://wa.me/919431214881"
+   class="fixed bottom-6 right-6 bg-green-500 h-14 w-14 rounded-full flex items-center justify-center text-white text-3xl shadow-xl">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
